@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titifix - Game Studio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-logo">
+            <span class="logo-text">TITIFIX</span>
+            <span class="logo-dot">.</span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#jeux">Mes Jeux</a></li>
+            <li><a href="#nouveautes">Nouveautés</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="accueil">
+        <div class="particles" id="particles"></div>
+        <div class="hero-content">
+            <p class="hero-subtitle">👾 Bienvenue dans l'univers de</p>
+            <h1 class="hero-title">
+                <span class="glitch" data-text="TITIFIX">TITIFIX</span>
+            </h1>
+            <p class="hero-desc">Développeur indépendant passionné de jeux mobiles.<br>Des expériences uniques, directement sur votre téléphone.</p>
+            <div class="hero-badges">
+                <span class="badge">🎮 Indie Dev</span>
+                <span class="badge">📱 Mobile Games</span>
+                <span class="badge">⭐ Play Store</span>
+            </div>
+            <div class="hero-buttons">
+                <a href="#jeux" class="btn btn-primary">Voir mes jeux 🎮</a>
+                <a href="#apropos" class="btn btn-secondary">En savoir plus</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== À PROPOS ========== -->
+    <section class="apropos fade-in" id="apropos">
+        <div class="container">
+            <h2 class="section-title">À Propos <span>de moi</span></h2>
+            <div class="apropos-content">
+                <div class="apropos-avatar">
+                    <div class="avatar-cercle">
+                        <img src="img/logo-titifix.png" alt="Logo Titifix" class="avatar-img">
+                    </div>
+                    <div class="avatar-ring"></div>
+                </div>
+                <div class="apropos-text">
+                    <h3>Salut, moi c'est <span>Titifix</span> !</h3>
+                    <p>Je suis un développeur de jeux mobiles indépendant, passionné par la création d'expériences de jeu fun et addictives. Je conçois, développe et publie mes propres jeux sur le <strong>Google Play Store</strong>.</p>
+                    <p>Mon objectif est simple : créer des jeux accessibles à tous, avec un gameplay intuitif et des sensations fortes !</p>
+                    <div class="competences">
+                        <div class="comp-item">
+                            <i class="fas fa-gamepad"></i>
+                            <span>Game Design</span>
+                        </div>
+                        <div class="comp-item">
+                            <i class="fas fa-code"></i>
+                            <span>Développement</span>
+                        </div>
+                        <div class="comp-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Mobile</span>
+                        </div>
+                        <div class="comp-item">
+                            <i class="fas fa-paint-brush"></i>
+                            <span>Game Art</span>
+                        </div>
+                    </div>
+                    <!-- STATS ANIMÉES -->
+                    <div class="stats-row">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="1">0</span>
+                            <span class="stat-label">Jeu publié</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="100">0</span>
+                            <span class="stat-label">% Passion</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== MES JEUX ========== -->
+    <section class="jeux fade-in" id="jeux">
+        <div class="container">
+            <h2 class="section-title">Mes <span>Jeux</span></h2>
+            <p class="section-desc">Retrouvez tous mes jeux disponibles sur le Play Store</p>
+            <div class="jeux-grid" id="jeuxGrid">
+
+                <!-- CARTE JEU 1 - Spin Or Die -->
+                <div class="jeu-card featured">
+                    <div class="card-badge">🔥 Nouveau</div>
+                    <div class="card-icon">
+                        <img src="img/spin-or-die.png" alt="Spin Or Die" class="game-icon-img">
+                    </div>
+                    <div class="card-info">
+                        <h3>Spin Or Die</h3>
+                        <p>Un jeu de survie intense où chaque rotation peut être la dernière. 
+                        Teste tes réflexes et bats ton record !</p>
+                        <div class="card-tags">
+                            <span class="tag">Arcade</span>
+                            <span class="tag">Réflexes</span>
+                            <span class="tag">Survie</span>
+                            <span class="tag">Multijoueur</span>
+                        </div>
+                        <div class="card-stats">
+                            <span><i class="fas fa-star"></i> Nouveau</span>
+                            <span><i class="fas fa-mobile-alt"></i> Android</span>
+                        </div>
+                    </div>
+
+                    <!-- BOUTON SCREENSHOTS -->
+                    <button class="btn-screenshots" onclick="openScreenshots()">
+                        <i class="fas fa-images"></i> Voir les Screenshots
+                    </button>
+
+                    <a href="spin-or-die-suppression-compte.html" class="btn-supprimer-compte">
+                        <i class="fas fa-trash-alt"></i> Supprimer mon compte
+                    </a>
+
+                    <a href="#" class="btn-play" id="playStoreBtn">
+                        <i class="fab fa-google-play"></i> Disponible sur Play Store
+                    </a>
+                    <p class="coming-soon-text">⏳ Lien disponible bientôt !</p>
+                </div>
+
+                <!-- CARTE PLACEHOLDER -->
+                <div class="jeu-card coming-soon">
+                    <div class="card-badge soon">Bientôt</div>
+                    <div class="card-icon">❓</div>
+                    <div class="card-info">
+                        <h3>Prochain Jeu...</h3>
+                        <p>Un nouveau projet est en cours de développement. Restez connectés pour découvrir la surprise !</p>
+                        <div class="card-tags">
+                            <span class="tag">À venir</span>
+                        </div>
+                    </div>
+                    <div class="coming-overlay">EN DÉVELOPPEMENT</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== NOUVEAUTÉS ========== -->
+    <section class="nouveautes fade-in" id="nouveautes">
+        <div class="container">
+            <h2 class="section-title">Dernières <span>Nouveautés</span></h2>
+            <div class="news-grid" id="newsGrid">
+
+                <article class="news-card">
+                    <div class="news-date">Aujourd'hui</div>
+                    <div class="news-icon">🚀</div>
+                    <h3>Spin Or Die arrive bientôt !</h3>
+                    <p>Mon premier jeu <strong>Spin Or Die</strong> est en cours de publication sur le Google Play Store. Préparez-vous !</p>
+                    <span class="news-tag">Lancement</span>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-date">Juin 2026</div>
+                    <div class="news-icon">🎮</div>
+                    <h3>Bienvenue sur mon site !</h3>
+                    <p>Le site officiel de Titifix est en ligne ! Suivez ici toutes mes actualités et nouveautés de jeux.</p>
+                    <span class="news-tag">Site</span>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-date">À venir</div>
+                    <div class="news-icon">💡</div>
+                    <h3>Prochain projet en cours</h3>
+                    <p>Je travaille déjà sur de nouvelles idées. Restez abonnés pour ne rien manquer !</p>
+                    <span class="news-tag">Teaser</span>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="contact fade-in" id="contact">
+        <div class="container">
+            <h2 class="section-title">Me <span>Contacter</span></h2>
+            <p class="section-desc">Une question ? Une collaboration ? Écrivez-moi !</p>
+            <div class="contact-wrapper">
+
+                <form class="contact-form" id="contactForm"
+                    action="https://formspree.io/f/xgojkkgb"
+                    method="POST">
+                    <div class="form-group">
+                        <input type="text" name="nom" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Votre email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
+                    </div>
+                    <input type="hidden" name="_subject" value="💌 Nouveau message depuis titifixdev.com">
+                    <button type="submit" class="btn btn-primary">
+                        Envoyer <i class="fas fa-paper-plane"></i>
+                    </button>
+                    <div class="form-success" id="formSuccess">
+                        ✅ Message envoyé ! Je vous réponds très vite.
+                    </div>
+                </form>
+
+                <div class="contact-social">
+                    <h3>Retrouvez-moi sur</h3>
+                    <a href="#" class="social-item" id="playStoreSocial">
+                        <i class="fab fa-google-play"></i>
+                        <div class="social-info">
+                            <span class="social-name">Google Play Store</span>
+                            <span class="social-handle">Voir mes jeux</span>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/titifix_dev/" class="social-item" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                        <div class="social-info">
+                            <span class="social-name">Instagram</span>
+                            <span class="social-handle">@titifix_dev</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <span class="logo-text">TITIFIX<span class="logo-dot">.</span></span>
+                <p>Développeur de jeux mobiles indépendant 🎮</p>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Titifix - Tous droits réservés</p>
+                <p>Fait avec ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+    <!-- ========== MODALE SCREENSHOTS ========== -->
+    <div id="screenshotsModal" class="modal-overlay" onclick="closeScreenshots(event)">
+        <div class="modal-box">
+            <button class="modal-close" onclick="closeScreenshots()">✕</button>
+            <h2 class="modal-title">📸 Spin Or Die — Screenshots</h2>
+            <div class="modal-grid">
+                <div class="modal-item">
+                    <img src="img/screenshots/gameplay.png" alt="Gameplay">
+                    <span>🎮 Gameplay</span>
+                </div>
+                <div class="modal-item">
+                    <img src="img/screenshots/roue.png" alt="Roue Fortune">
+                    <span>🎰 Roue de la Fortune</span>
+                </div>
+                <div class="modal-item">
+                    <img src="img/screenshots/multijoueur.png" alt="Multijoueur">
+                    <span>⚔️ Multijoueur</span>
+                </div>
+                <div class="modal-item">
+                    <img src="img/screenshots/skins.png" alt="Skins">
+                    <span>🎨 Skins Exclusifs</span>
+                </div>
+                <div class="modal-item">
+                    <img src="img/screenshots/classement.png" alt="Classement">
+                    <span>🏆 Top 100</span>
+                </div>
+                <div class="modal-item">
+                    <img src="img/screenshots/defis.png" alt="Défis">
+                    <span>⚡ Défis Exclusifs</span>
+                </div>
+                <div class="modal-item">
+                    <img src="img/screenshots/mondes.png" alt="Mondes">
+                    <span>🌍 Mondes Uniques</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close" id="lightboxClose">✕</span>
+        <img id="lightbox-img" src="" alt="">
+        <p id="lightbox-caption"></p>
+    </div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"8607d2a720d14b038279025b2b5a82e5","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
